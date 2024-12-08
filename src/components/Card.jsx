@@ -44,17 +44,19 @@ function Card() {
     return (
       <div
         key={cards.id}
-        className="flex flex-col max-w-sm bg-white mx-3 rounded-lg"
+        className="flex flex-col max-w-sm bg-white mx-3 my-3 hover:scale-105 duration-300"
       >
         <img className="w-full" src={cards.img} alt="" />
         <h2 className="text-3xl py-2">{cards.title} </h2>
-        <button className="text-start underline decoration-1 mb-10">
+        <button className="text-start underline decoration-1">
           {cards.button}
         </button>
       </div>
+
+      
     );
   });
-  return <div className="flex flex-wrap">{HTMLInfo}</div>;
+  return <div className="flex flex-wrap justify-center">{HTMLInfo}</div>;
 }
 
 export default Card;
