@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'MiFuentePersonalizada';
+  src: url('./fonts/uber.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  font-family: 'MiFuentePersonalizada', sans-serif;
+}
